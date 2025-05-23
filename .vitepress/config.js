@@ -33,7 +33,7 @@ export default {
     siteTitle: "团子的个人博客",
     logo: "/logos/logo.svg",
     outlineTitle: "文章目录",
-    outline: [2,6],
+    outline: [2, 6],
     returnToTopLabel: "回到顶部",
     darkModeSwitchLabel: "样式",
     lightModeSwitchTitle: "切换为亮色模式",
@@ -41,6 +41,10 @@ export default {
     externalLinkIcon: true,
     lastUpdated: {
       text: "最后更新于",
+      formatOptions: {
+        dateStyle: 'medium',
+        timeStyle: 'short',
+      },
     },
 
     docFooter: {
@@ -53,7 +57,7 @@ export default {
     },
 
     editLink: {
-      pattern: 'https://github.com/DangoRepo/blog/tree/master/:path',
+      pattern: "https://github.com/DangoRepo/blog/tree/master/:path",
       text: "在 GitHub 上编辑此页面",
     },
 
