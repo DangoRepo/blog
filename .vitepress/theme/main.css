@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'HYWenHei';
+    src: url(/fonts/HYWenHei-45W.woff2);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'HYWenHei';
+    src: url(/fonts/HYWenHei-85W.woff2);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'FiraCode';
+    src: url(/fonts/FiraCode-Regular.woff2);
+}
+
+.medium-zoom-overlay {
+    z-index: 1000;
+}
+
+.medium-zoom-image {
+    z-index: 1001;
+}
+
+.vp-doc {
+    font-variant-ligatures: none;
+}
+
+.vp-doc figure {
+    margin: .3rem auto;
+    text-align: center;
+}
+
+.vp-doc figure img {
+    margin: 0 auto;
+}
+
+.vp-doc figure figcaption {
+    font-weight: bold;
+    line-height: 2.2rem;
+    color: var(--vp-fig-light-text);
+}
+
+html.dark .vp-doc figure figcaption {
+    color: var(--vp-fig-text);
+}
+
+.vp-doc p {
+    margin-block-start: .3rem;
+    margin-block-end: .3rem;
+}
+
+.vp-doc ul,
+.vp-doc ol {
+    margin: .4rem 0;
+}

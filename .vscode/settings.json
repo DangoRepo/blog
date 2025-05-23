@@ -1,0 +1,10 @@
+{
+    "editor.codeActionsOnSave": {
+
+    },
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "workbench.editorAssociations": {
+        "*.md": "default"
+    }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "@dango/blog",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev . --host",
+    "build": "vitepress build .",
+    "preview": "vitepress preview .",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix .vitepress"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-xo": "^0.43.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-vue": "^9.20.0",
+    "markdown-it-mathjax3": "^4.3.2",
+    "prettier": "^3.1.1",
+    "vitepress": "1.0.0-rc.36"
+  },
+  "dependencies": {
+    "@jamescoyle/vue-icon": "^0.1.2",
+    "@mdit/plugin-align": "^0.8.0",
+    "@mdit/plugin-figure": "^0.8.0",
+    "@quasar/extras": "^1.16.9",
+    "lodash": "^4.17.21",
+    "medium-zoom": "^1.1.0"
+  },
+  "packageManager": "pnpm@9.12.0+sha512.4abf725084d7bcbafbd728bfc7bee61f2f791f977fd87542b3579dcb23504d170d46337945e4c66485cd12d588a0c0e570ed9c477e7ccdd8507cf05f3f92eaca"
+}
