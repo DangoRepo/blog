@@ -61,15 +61,15 @@ export default {
     sidebar: {
       "/documentation/": [
         {
-          text: "点位关联",
+          text: "文档",
           collapsed: false,
           items: [
             {
               text: "基础介绍",
-              link: "/documentation/marker-linkage/link-marker-intro.md",
+              link: "/documentation/404.md",
             },
             {
-              text: "添加/修改关联",
+              text: "API 示例",
               link: "/documentation/404.md",
             },
           ],
