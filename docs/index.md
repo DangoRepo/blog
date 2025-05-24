@@ -11,5 +11,5 @@ hero:
   actions:
     - theme: brand
       text: 文档入口
-      link: /documentation/
+      link: /preface/preface.md
 ---
