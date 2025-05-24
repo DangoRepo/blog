@@ -22,12 +22,13 @@
     "eslint-plugin-vue": "^9.20.0",
     "markdown-it-mathjax3": "^4.3.2",
     "prettier": "^3.1.1",
-    "vitepress": "1.0.0-rc.36"
+    "vitepress": "^1.6.3"
   },
   "dependencies": {
     "@jamescoyle/vue-icon": "^0.1.2",
-    "@mdit/plugin-align": "^0.8.0",
-    "@mdit/plugin-figure": "^0.8.0",
+    "@mdit/plugin-align": "^0.18.0",
+    "@mdit/plugin-figure": "^0.18.0",
+    "@mdit/plugin-plantuml": "^0.18.0",
     "@quasar/extras": "^1.16.9",
     "lodash": "^4.17.21",
     "medium-zoom": "^1.1.0"
