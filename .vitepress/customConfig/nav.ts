@@ -1,0 +1,24 @@
+import { DefaultTheme } from "vitepress";
+
+const nav : DefaultTheme.NavItem[] = [
+    {
+    text: "文档",
+    items: [
+      {
+        text: "翻译标准",
+        link: "/i18n-standard/",
+      },
+    ],
+  },
+  {
+    text: "其他",
+    items: [
+      {
+        text: "常用 Emoji 图标",
+        link: "/misc/md-emoji-list.md",
+      }
+    ],
+  },
+]
+
+export default nav
