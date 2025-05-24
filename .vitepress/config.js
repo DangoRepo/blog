@@ -78,27 +78,26 @@ export default {
     nav: [
       {
         text: "文档",
-        link: "/documentation/",
-        activeMatch: "/documentation/",
+        items: [
+          {
+            text: "翻译标准",
+            link: "/i18n-standard/",
+          },
+        ],
+      },
+      {
+        text: "其他",
+        items: [
+          {
+            text: "常用 Emoji 图标",
+            link: "/misc/md-emoji-list.md",
+          }
+        ],
       },
     ],
-    sidebar: {
-      "/documentation/": [
-        {
-          text: "文档",
-          collapsed: false,
-          items: [
-            {
-              text: "基础介绍",
-              link: "/documentation/marker-linkage/link-marker-intro.md",
-            },
-            {
-              text: "API 示例",
-              link: "/documentation/404.md",
-            },
-          ],
-        },
-      ],
-    },
+
+    sidebar: [
+
+    ],
   },
 };
