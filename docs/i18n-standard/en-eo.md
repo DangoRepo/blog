@@ -51,9 +51,9 @@ title: 英语 → 世界语
 | **y**    | [j]<br>[iː]                | **j<br>i**           | York → Jorko<br>Salisbury → Salisburio                                             |
 | **z**    | [z]                        | **z**                | 缺少例子                                                                            |
 
-## Specialaj kazoj
+## 特殊情况
 
-- **La literkombino ng**
+- **关于字母组合 ng**
 
 英语中的 ng 字母组合（发音为 [ŋ]）通常不是根据发音进行转译，而是保留原字形，直接转译为 ng。
 
@@ -69,7 +69,7 @@ Sterling  ->  Sterlingo
 Wyoming   ->  Vajomingo
 ```
 
-以上规则同样适用于ang。
+以上规则同样适用于 ang。
 
 地名也同样适用：
 
