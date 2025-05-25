@@ -6,6 +6,10 @@ const sidebar : DefaultTheme.Sidebar = {
       text: "转译标准",
       items: [
         {
+          text: "中文 → 世界语",
+          link: "/i18n-standard/zh-eo.md",
+        },
+        {
           text: "英语 → 世界语",
           link: "/i18n-standard/en-eo.md",
         },
