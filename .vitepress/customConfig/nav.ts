@@ -1,12 +1,21 @@
 import { DefaultTheme } from "vitepress";
 
 const nav : DefaultTheme.NavItem[] = [
-    {
+  {
     text: "文档",
     items: [
       {
         text: "翻译标准",
         link: "/i18n-standard/",
+      },
+    ],
+  },
+  {
+    text: "工具",
+    items: [
+      {
+        text: "Sophon Downloader",
+        link: "/tool/sophon-downloader.md",
       },
     ],
   },
