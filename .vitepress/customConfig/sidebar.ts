@@ -13,6 +13,10 @@ const sidebar : DefaultTheme.Sidebar = {
           text: "英语 → 世界语",
           link: "/i18n-standard/en-eo.md",
         },
+        {
+          text: "日语 → 世界语",
+          link: "/i18n-standard/ja-eo.md",
+        },
       ],
     },
     {
