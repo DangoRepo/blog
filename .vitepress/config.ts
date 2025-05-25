@@ -6,13 +6,17 @@ import {
   themeConfig
 } from './customConfig';
 
+const URL_BASE = '/blog/';
+const withBase = (url: string) => `${URL_BASE}${url}`.replace(/\/+/g, '/');
+
 export default defineConfig({
   head: [
     [
       "link",
       {
         rel: "icon",
-        href: "/favicon.svg",
+        type: 'image/x-icon',
+        href: withBase("/logos/favicon.svg"),
       },
     ],
   ],
