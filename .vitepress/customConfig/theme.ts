@@ -3,7 +3,7 @@ import { DefaultTheme } from "vitepress";
 const theme : Partial<DefaultTheme.Config> = {
     aside: true,
     siteTitle: "团子的个人博客",
-    logo: "/logos/logo.svg",
+    logo: "/logos/favicon.svg",
     outlineTitle: "文章目录",
     outline: [2, 6],
     returnToTopLabel: "回到顶部",

@@ -7,6 +7,15 @@ import {
 } from './customConfig';
 
 export default defineConfig({
+  head: [
+    [
+      "link",
+      {
+        rel: "icon",
+        href: "/favicon.svg",
+      },
+    ],
+  ],
   title: "团子的个人博客",
   description: "团子的个人博客",
   lang: "zh-CN",
