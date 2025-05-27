@@ -25,7 +25,11 @@ const nav : DefaultTheme.NavItem[] = [
       {
         text: "常用 Emoji 图标",
         link: "/misc/md-emoji-list.md",
-      }
+      },
+      {
+        text: "翻译标准",
+        link: "/i18n-standard/",
+      },
     ],
   },
 ]
