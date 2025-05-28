@@ -1,6 +1,13 @@
 import { DefaultTheme } from "vitepress";
 
 const sidebar : DefaultTheme.Sidebar = {
+  "/md-tutorial/":[
+    {
+      text: "入门基础",
+      link: "/md-tutorial/md-intro.md",
+    },
+  ],
+
   "/i18n-standard/": [
     {
       text: "转译标准",

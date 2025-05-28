@@ -2,11 +2,11 @@ import { DefaultTheme } from "vitepress";
 
 const nav : DefaultTheme.NavItem[] = [
   {
-    text: "文档",
+    text: "教程",
     items: [
       {
-        text: "翻译标准",
-        link: "/i18n-standard/",
+        text: "Markdown 教程",
+        link: "/md-tutorial/md-intro.md",
       },
     ],
   },
