@@ -13,7 +13,18 @@ const sidebar : DefaultTheme.Sidebar = {
     {
       text: "工具",
       link: "/md-tutorial/md-tools.md",
-    }
+    },
+    {
+      text: "Markdown 基本语法",
+      link: "/md-tutorial/basic-syntax.md",
+      collapsed: false,
+      items: [
+        {
+          text: "Markdown 标题语法",
+          link: "/md-tutorial/basic-syntax/headings.md",
+        }
+      ],
+    },
   ],
 
   "/i18n-standard/": [
