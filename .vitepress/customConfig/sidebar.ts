@@ -6,6 +6,10 @@ const sidebar : DefaultTheme.Sidebar = {
       text: "入门基础",
       link: "/md-tutorial/md-intro.md",
     },
+    {
+      text: "其他资源",
+      link: "/md-tutorial/other-resources.md",
+    },
   ],
 
   "/i18n-standard/": [
