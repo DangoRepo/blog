@@ -22,7 +22,11 @@ const sidebar : DefaultTheme.Sidebar = {
         {
           text: "Markdown 标题语法",
           link: "/md-tutorial/basic-syntax/headings.md",
-        }
+        },
+        {
+          text: "Markdown 段落语法",
+          link: "/md-tutorial/basic-syntax/paragraphs.md",
+        },
       ],
     },
   ],
