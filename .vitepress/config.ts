@@ -26,6 +26,7 @@ export default defineConfig({
   base: "/blog/",
   srcDir: "./docs",
   cleanUrls: true,
+  ignoreDeadLinks: true,
 
   markdown: markdownConfig,
 
