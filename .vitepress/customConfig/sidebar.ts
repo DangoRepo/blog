@@ -27,6 +27,10 @@ const sidebar : DefaultTheme.Sidebar = {
           text: "Markdown 段落语法",
           link: "/md-tutorial/basic-syntax/paragraphs.md",
         },
+        {
+          text: "Markdown 换行语法",
+          link: "/md-tutorial/basic-syntax/line-breaks.md",
+        }
       ],
     },
   ],

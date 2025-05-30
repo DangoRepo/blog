@@ -11,7 +11,7 @@ aside: false
 
 比如，添加三个 `#` 表示创建一个三级标题（HTML 中记作 `<h3>`），例如：`### Heading level 3`。
 
-|      Markdown语法      |           HTML             |          预览效果         |
+|      Markdown 语法      |           HTML             |          预览效果         |
 |:----------------------:|:--------------------------:|:------------------------:|
 | # Heading level 1      | `<h1>Heading level 1</h1>` | <h1>Heading level 1</h1> |
 | ## Heading level 2     | `<h2>Heading level 2</h2>` | <h2>Heading level 2</h2> |
