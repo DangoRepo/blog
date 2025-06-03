@@ -1,32 +1,36 @@
 <script setup>
-import _ from "lodash";
-import { computed, defineProps } from "vue";
+import _ from 'lodash'
+import { computed, defineProps } from 'vue'
 
 const props = defineProps({
   keys: {
     type: Array,
     default() {
-      return [];
+      return []
     },
   },
-});
+})
 
 const keystrokes = computed(() => {
-  const keys = props.keys || [];
+  const keys = props.keys || []
   const strokes = _.chain(keys)
-    .filter((v) => v && v.trim())
-    .map((v) => (v || "").split("+").filter((v) => v && v.trim()))
-    .value();
-  return strokes;
-});
+    .filter(v => v && v.trim())
+    .map(v => (v || '').split('+').filter(v => v && v.trim()))
+    .value()
+  return strokes
+})
 </script>
 
 <template>
   <div class="keystroke-text">
     <template v-for="(keystroke, strokeIndex) in keystrokes" :key="strokeIndex">
-      <template v-if="strokeIndex !== 0">,</template>
+      <template v-if="strokeIndex !== 0">
+        ,
+      </template>
       <template v-for="(key, keyIndex) in keystroke" :key="keyIndex">
-        <template v-if="keyIndex !== 0">+</template>
+        <template v-if="keyIndex !== 0">
+          +
+        </template>
         <kbd>{{ key }}</kbd>
       </template>
     </template>

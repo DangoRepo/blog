@@ -1,5 +1,5 @@
-import Css from "./css.js";
+import Css from './css.js'
 
 export default {
   css: Css,
-};
+}

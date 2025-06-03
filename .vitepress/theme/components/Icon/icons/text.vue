@@ -1,16 +1,16 @@
 <script setup>
-import { defineProps } from "vue";
+import { defineProps } from 'vue'
 
 defineProps({
   icon: {
     type: String,
-    default: "",
+    default: '',
   },
   color: {
     type: String,
-    default: "var(--vp-c-neutral)",
+    default: 'var(--vp-c-neutral)',
   },
-});
+})
 </script>
 
 <template>

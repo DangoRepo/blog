@@ -1,39 +1,39 @@
-import { watch, onMounted, nextTick } from "vue";
-import { useRoute } from "vitepress";
-import DefaultTheme from "vitepress/theme-without-fonts";
-import "./vars.css";
-import "./main.css";
-import mediumZoom from "medium-zoom";
-import Icon from "./components/Icon/index.vue";
-import Cursor from "./components/Cursor/index.vue";
-import KeyTag from "./components/KeyTag/index.vue";
+import mediumZoom from 'medium-zoom'
+import { useRoute } from 'vitepress'
+import DefaultTheme from 'vitepress/theme-without-fonts'
+import { nextTick, onMounted, watch } from 'vue'
+import Cursor from './components/Cursor/index.vue'
+import Icon from './components/Icon/index.vue'
+import KeyTag from './components/KeyTag/index.vue'
+import './vars.css'
+import './main.css'
 
 export default {
   ...DefaultTheme,
   enhanceApp(ctx) {
-    DefaultTheme.enhanceApp(ctx);
-    ctx.app.component("Icon", Icon);
-    ctx.app.component("Cursor", Cursor);
-    ctx.app.component("KeyTag", KeyTag);
+    DefaultTheme.enhanceApp(ctx)
+    ctx.app.component('Icon', Icon)
+    ctx.app.component('Cursor', Cursor)
+    ctx.app.component('KeyTag', KeyTag)
   },
   setup() {
-    const route = useRoute();
+    const route = useRoute()
     const initZoom = () => {
-      mediumZoom(".main img:not(.no-zoomable)", {
-        background: "var(--vp-c-bg)",
-      });
-    };
+      mediumZoom('.main img:not(.no-zoomable)', {
+        background: 'var(--vp-c-bg)',
+      })
+    }
 
     onMounted(() => {
-      initZoom();
-    });
+      initZoom()
+    })
 
     watch(
       () => route.path,
       () =>
         nextTick(() => {
-          initZoom();
+          initZoom()
         }),
-    );
+    )
   },
-};
+}

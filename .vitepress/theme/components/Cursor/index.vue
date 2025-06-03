@@ -1,31 +1,34 @@
 <script setup>
-import { computed, defineProps } from "vue";
-import { withBase } from "vitepress";
-import adapterDict from "./adapters/index";
+import { withBase } from 'vitepress'
+import { computed, defineProps } from 'vue'
+import adapterDict from './adapters/index'
 
 const props = defineProps({
   set: {
     type: String,
-    default: "",
+    default: '',
   },
   name: {
     type: String,
-    default: "",
+    default: '',
   },
-});
+})
 
 const cursorUrl = computed(() => {
-  const adapter = adapterDict[props.set] || {};
-  const filename = adapter[props.name] || "";
-  if (!filename) return "";
+  const adapter = adapterDict[props.set] || {}
+  const filename = adapter[props.name] || ''
+  if (!filename)
+    return ''
 
-  return withBase(`/cursors/${props.set}/${filename}`);
-});
+  return withBase(`/cursors/${props.set}/${filename}`)
+})
 </script>
 
 <template>
   <div class="cursor-area" :style="{ '--image': `url(${cursorUrl})` }">
-    <div class="cursor-image">&nbsp;</div>
+    <div class="cursor-image">
+&nbsp;
+    </div>
   </div>
 </template>
 
