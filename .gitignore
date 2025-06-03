@@ -3,5 +3,7 @@ node_modules
 package-lock.json
 yarn.lock
 
+.eslintcache
+
 .vitepress/cache
 .vitepress/dist
