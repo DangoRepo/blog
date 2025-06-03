@@ -3,7 +3,6 @@ import { align } from '@mdit/plugin-align'
 import { figure } from '@mdit/plugin-figure'
 
 const markdown: MarkdownOptions = {
-  math: true,
   image: {
     lazyLoading: true,
   },
