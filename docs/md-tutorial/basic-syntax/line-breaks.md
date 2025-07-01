@@ -2,20 +2,52 @@
 layout: doc
 title: Markdown 换行语法
 ---
-# Markdown 换行语法
+# Markdown 换行语法 {#line-breaks}
 
 ----
 
-在一行的末尾添加两个或多个空格，然后按回车键,即可创建一个换行（`<br>`）。
+Markdown 有以下几种语法格式来实现换行：
+1. 在一行的末尾添加两个或两个以上的换行（在 HTML 中处理为 `<br>`）。
+2. 在一行的末尾添加两个或两个以上的空格，随后键入一次换行。
+3. 在一行的末尾添加一个反斜杠 `\`，随后键入一次换行。
+
+:::tip
+因为直接使用空格效果不足够明显，在本篇以及后续的教程中，我会使用 HTML 语法中的空格 `&nbsp;` 来代替一个空格。
+:::
 
 |      Markdown 语法      |           HTML             |          预览效果         |
-|:----------------------:|:--------------------------:|:------------------------:|
-| `This is the first line.`  <br>`And this is the second line.` |`<p>This is the first line.<br>`<br>`And this is the second line.</p>` | This is the first line.<br>And this is the second line. |
+|:----------------------|:--------------------------|:------------------------|
+| `First line`<br>` `<br>`Second line` | `<p>First line</p><p>Second line</p>` | <p>First line</p><p>Second line</p> |
+| `First line&nbsp;&nbsp;`<br>`Second line`| `<p>First line<br />Second line</p>` | <p>First line<br />Second line</p> |
+| `First line\`<br>`Second line` | `<p>First line<br />Second line</p>` | <p>First line<br />Second line</p> |
 
-## 关于换行的最佳用法
+但需要注意的是，在诸如 VSCode 等编辑器中，由于编辑器的设置，行尾的空格可能会被自动删除，导致方法 2 中的换行无法生效，所以如果你不想更改这个设置，我还是建议你使用其他的换行方式。
 
-几乎每个 Markdown 应用程序都支持两个或多个空格进行换行，称为 **结尾空格（trailing whitespace）** 的方式，但这是有争议的，因为很难在编辑器中直接看到空格，并且很多人在每个句子后面都会有意或无意地添加两个空格。由于这个原因，你可能要使用除结尾空格以外的其它方式来换行。幸运的是，几乎每个 Markdown 应用程序都支持另一种换行方式：HTML 的 <br> 标签。
+## 换行语法的注意点
 
-为了兼容性，请在行尾添加“结尾空格”或 HTML 的 <br> 标签来实现换行。
+1. 换行语法不能在行间代码块中使用：
 
-还有两种其他方式我并不推荐使用。CommonMark 和其它几种轻量级标记语言支持在行尾添加反斜杠 （`\`） 的方式实现换行，但是并非所有 Markdown 应用程序都支持此种方式，因此从兼容性的角度来看，不推荐使用。并且至少有两种轻量级标记语言支持无须在行尾添加任何内容，只须键入回车键（return）即可实现换行；即便如此，我还是推荐你使用`<br>`进行换行。
+|      Markdown 语法    |         预览效果       |
+|:--------------------- |:------------------------|
+| `code\`<br>`span` | <p><code>code   span</code></p> |
+| `code&nbsp;&nbsp;`<br>`span` | <p><code>code   span</code></p> |
+
+2. 换行语法不能在 HTML 标签中使用。不过准确来说这应该属于 HTML 语法的规则：
+
+|      Markdown 语法    |         预览效果       |
+|:--------------------- |:------------------------|
+| `<a href="code\`<br>`span">` | 无效语法 |
+| `<a href="code&nbsp;&nbsp;`<br>`span">` | 无效语法 |
+
+3. 无论使用哪种换行，换行语法后都应该至少接一个新的行，否则换行语法会被当作普通文本处理：
+
+|      Markdown 语法    |         预览效果       |
+|:--------------------- |:------------------------|
+| `foo\` | foo\ |
+| `foo&nbsp;&nbsp;` | foo |
+| `###foo\` | <h3>foo\ </h3> |
+| `###foo&nbsp;&nbsp;` | <h3>foo\ </h3> |
+
+:::details 补充
+4. GitHub 在支持以上全部语法的前提下，为了照顾部分不熟悉或不适应 Markdown "双换行"的换行方式的用户，自行拓展了另外一种换行方式，GitHub 的文档称之为“软换行”。它与前面所说的方法 1 相似，但区别是 GitHub 的这个扩展语法仅需在行尾使用一次换行即可，就像平时在 Word 或者记事本中换行一样。
+:::
