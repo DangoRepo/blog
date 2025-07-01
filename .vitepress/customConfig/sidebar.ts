@@ -31,6 +31,10 @@ const sidebar: DefaultTheme.Sidebar = {
           text: 'Markdown 换行语法',
           link: '/md-tutorial/basic-syntax/line-breaks.md',
         },
+        {
+          text: 'Markdown 强调语法',
+          link: '/md-tutorial/basic-syntax/emphasis.md',
+        },
       ],
     },
   ],
