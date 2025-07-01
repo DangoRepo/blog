@@ -55,3 +55,7 @@ html.dark .vp-doc figure figcaption {
 .vp-doc ol {
     margin: .4rem 0;
 }
+
+.vp-doc strong * {
+    font-weight: 600;
+}
