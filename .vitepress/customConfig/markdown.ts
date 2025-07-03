@@ -1,6 +1,7 @@
 import type { MarkdownOptions } from 'vitepress'
 import { align } from '@mdit/plugin-align'
 import { figure } from '@mdit/plugin-figure'
+import pluginMdc from 'markdown-it-mdc'
 
 const markdown: MarkdownOptions = {
   image: {
@@ -16,6 +17,7 @@ const markdown: MarkdownOptions = {
   config(md) {
     md.use(align)
     md.use(figure)
+    md.use(pluginMdc)
   },
 }
 

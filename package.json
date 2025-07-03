@@ -27,6 +27,8 @@
     "@mdit/plugin-figure": "^0.18.0",
     "@quasar/extras": "^1.16.9",
     "lodash": "^4.17.21",
+    "markdown-it": "^14.1.0",
+    "markdown-it-mdc": "^0.2.6",
     "medium-zoom": "^1.1.0"
   },
   "packageManager": "pnpm@9.12.0+sha512.4abf725084d7bcbafbd728bfc7bee61f2f791f977fd87542b3579dcb23504d170d46337945e4c66485cd12d588a0c0e570ed9c477e7ccdd8507cf05f3f92eaca"
