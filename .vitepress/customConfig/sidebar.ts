@@ -24,12 +24,8 @@ const sidebar: DefaultTheme.Sidebar = {
           link: '/md-tutorial/basic-syntax/headings.md',
         },
         {
-          text: 'Markdown 段落语法',
-          link: '/md-tutorial/basic-syntax/paragraphs.md',
-        },
-        {
-          text: 'Markdown 换行语法',
-          link: '/md-tutorial/basic-syntax/line-breaks.md',
+          text: 'Markdown 段落与换行',
+          link: '/md-tutorial/basic-syntax/para-and-line-breaks.md',
         },
         {
           text: 'Markdown 强调语法',

@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Markdown 换行语法
+title: Markdown 段落与换行
 ---
 # Markdown 换行语法 {#line-breaks}
 
@@ -41,13 +41,36 @@ Markdown 有以下几种语法格式来实现换行：
 
 3. 无论使用哪种换行，换行语法后都应该至少接一个新的行，否则换行语法会被当作普通文本处理：
 
-|      Markdown 语法    |         预览效果       |
-|:--------------------- |:------------------------|
-| `foo\` | foo\ |
-| `foo&nbsp;&nbsp;` | foo |
-| `###foo\` | <h3>foo\ </h3> |
-| `###foo&nbsp;&nbsp;` | <h3>foo\ </h3> |
+<DemoTable :list="[
+    `foo\\`,
+    `foo&nbsp;&nbsp;`,
+    `###foo\\`,
+    `###foo&nbsp;&nbsp;`
+]" />
 
 :::details 补充
 4. GitHub 在支持以上全部语法的前提下，为了照顾部分不熟悉或不适应 Markdown "双换行"的换行方式的用户，自行拓展了另外一种换行方式，GitHub 的文档称之为“软换行”。它与前面所说的方法 1 相似，但区别是 GitHub 的这个扩展语法仅需在行尾使用一次换行即可，就像平时在 Word 或者记事本中换行一样。
+:::
+
+# Markdown 段落语法
+
+----
+
+要创建段落，请使用空白行将一行或多行文本进行分隔。
+
+|Markdown 语法|HTML|预览效果|
+|:--:|:--:|:--:|
+|`I'm using Markdown to format my documents.`<br><br>`It's really convenient.`|`<p>I'm using Markdown to format my documents.</p>`<br>`<p>It's really convenient.</p>`|<p>I'm using Markdown to format my documents.</p><p>It's really convenient.</p>|
+
+----
+
+:::warning 注意
+虽然你可能习惯了在传统文字编辑器上使用 Space 或 Tab 缩进来区分段落，但很不幸，上述两种方法在 Markdown 上均无效。请 **尤其注意** 不要在段落开头使用 Space 或 Tab 来表示段落，这会导致一些意料之外的排版问题。比如使用 Markdown 输入以下内容（`&nbsp;` 为空格）：
+
+<DemoTable :list="[
+    `&nbsp;&nbsp;&nbsp;&nbsp;如果你使用空格在 Markdown 中来区分段落，则会产生这种问题。`
+]" />
+
+
+可以从示例对应的 HTML 代码中看到，由于段落开头的四个空格，这段文本被当作了 **代码块**（`<pre><code></code></pre>`）处理。关于代码块，你现在不需要了解，这在后面的章节中会讲到。
 :::
