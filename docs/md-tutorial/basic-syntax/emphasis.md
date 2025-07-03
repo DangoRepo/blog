@@ -78,4 +78,4 @@ bar**
 
 关于换行语法的使用，详见[换行语法][p:line-breaks]。
 
-[p:line-breaks]: ./line-breaks.md#line-breaks
+[p:line-breaks]: ./para-and-line-breaks.md#line-breaks
