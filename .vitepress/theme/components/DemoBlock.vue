@@ -94,7 +94,7 @@ const renderList = computed<DemoItem[]>(() => {
   display: flex;
   flex-direction: column;
   word-break: break-all;
-  max-height: 100px; /* 固定显示区域高度 */
+  max-height: 200px; /* 固定显示区域高度 */
   overflow: auto; /* 内容溢出时显示滚动条 */
 }
 
