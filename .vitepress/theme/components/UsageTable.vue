@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import MarkdownIt from 'markdown-it'
 import { computed } from 'vue'
 
 const props = defineProps<{
@@ -13,8 +12,6 @@ const props = defineProps<{
     outputBg?: string
   }
 }>()
-
-const md = new MarkdownIt()
 
 const renderList = computed(() => props.list)
 </script>
