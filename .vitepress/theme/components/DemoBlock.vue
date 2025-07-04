@@ -89,6 +89,7 @@ const renderList = computed<DemoItem[]>(() => {
   flex-direction: column;
   flex: 1; /* 平均分配宽度 */
   min-height: 0; /* 允许内容溢出时正常拉伸 */
+  overflow: auto;
 }
 
 .code,
