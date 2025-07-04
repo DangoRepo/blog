@@ -26,26 +26,22 @@ const renderList = computed<DemoItem[]>(() => {
 
 <template>
   <div class="demo-block-container">
-    <div v-for="(item, index) in renderList" :key="index" class="wrapper">
+    <div class="wrapper">
+      <!-- 单个标题区域 -->
       <div class="section-code">
-        <div class="title">
-          Markdown 语法
-        </div>
-        <div class="code" v-html="item.code" />
+        <div class="title">Markdown 语法</div>
+        <!-- 多个内容项共享该标题 -->
+        <div v-for="(item, index) in renderList" :key="index" class="code" v-html="item.code" />
       </div>
+
       <div class="section-html">
-        <div class="title">
-          HTML
-        </div>
-        <div class="html">
-          {{ item.html }}
-        </div>
+        <div class="title">HTML</div>
+        <div v-for="(item, index) in renderList" :key="index" class="html">{{ item.html }}</div>
       </div>
+
       <div class="section-preview">
-        <div class="title">
-          预览效果
-        </div>
-        <div class="preview" v-html="item.html" />
+        <div class="title">预览效果</div>
+        <div v-for="(item, index) in renderList" :key="index" class="preview" v-html="item.html" />
       </div>
     </div>
   </div>
@@ -69,9 +65,17 @@ const renderList = computed<DemoItem[]>(() => {
   display: flex;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.102);
   align-items: stretch; /* 确保子元素高度拉伸以填满容器 */
   height: auto;
+}
+
+.section-code .code:not(:last-child),
+.section-html .html:not(:last-child),
+.section-preview .preview:not(:last-child) {
+  /* margin-bottom: 0.5rem; */
+  padding-bottom: 0.5rem;
+  border-bottom: 5px solid rgba(51, 51, 51, 0.750);
 }
 
 .section-code .title {background-color: var(--demoblock-title-c-bg)}
