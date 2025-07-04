@@ -73,14 +73,13 @@ const renderList = computed<DemoItem[]>(() => {
 .section-code .code:not(:last-child),
 .section-html .html:not(:last-child),
 .section-preview .preview:not(:last-child) {
-  /* margin-bottom: 0.5rem; */
   padding-bottom: 0.5rem;
-  border-bottom: 5px solid rgba(51, 51, 51, 0.750);
+  border-bottom: 3px solid var(--glb-customtable-c-border);
 }
 
-.section-code .title {background-color: var(--demoblock-title-c-bg)}
-.section-html .title {background-color: var(--demoblock-title-c-bg-html)}
-.section-preview .title {background-color: var(--demoblock-title-c-bg-preview);}
+.section-code .title {background-color: var(--glb-customtable-title-c-bg-lv0)}
+.section-html .title {background-color: var(--glb-customtable-title-c-bg-lv1)}
+.section-preview .title {background-color: var(--glb-customtable-title-c-bg-lv2);}
 
 .section-code,
 .section-html,
@@ -105,7 +104,7 @@ const renderList = computed<DemoItem[]>(() => {
 
 .wrapper .code {
   flex: 2;
-  background-color: var(--demoblock-c-bg);
+  background-color: var(--glb-customtable-content-bg-lv0);
   color: var(--vp-c-text-1);
   padding: 1rem;
   font-family: monospace;
@@ -114,7 +113,7 @@ const renderList = computed<DemoItem[]>(() => {
 
 .wrapper .html {
   flex: 2;
-  background-color: var(--demoblock-c-bg-html);
+  background-color: var(--glb-customtable-content-bg-lv1);
   color: var(--vp-c-text-1);
   padding: 1rem;
   font-family: monospace;
@@ -123,7 +122,7 @@ const renderList = computed<DemoItem[]>(() => {
 
 .wrapper .preview {
   flex: 2;
-  background-color: var(--demoblock-c-bg-preview);
+  background-color: var(--glb-customtable-content-bg-lv2);
   color: var(--vp-c-text-1);
   padding: 1rem;
 }
