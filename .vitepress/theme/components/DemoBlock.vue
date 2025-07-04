@@ -112,7 +112,7 @@ const renderList = computed<DemoItem[]>(() => {
 }
 
 .wrapper .html {
-  width: 15rem;
+  flex: 2;
   background-color: var(--demoblock-c-bg-html);
   color: var(--vp-c-text-1);
   padding: 1rem;
