@@ -7,7 +7,7 @@ const props = defineProps<{
     left?: string
     right?: string
   }
-  colors?:{
+  colors?: {
     inputBg?: string
     outputBg?: string
   }
@@ -22,15 +22,21 @@ const renderList = computed(() => props.list)
       <!-- 左侧区域 -->
       <div class="section-input">
         <!-- 自定义左侧标题 -->
-        <div class="title">{{ labels?.left || 'Input' }}</div>
-        <div v-for="(item, index) in renderList" :key="index" class="input" v-html="item[0]" :style="{ backgroundColor: props.colors?.inputBg }"/>
+        <div class="title">
+          {{ labels?.left || 'Input' }}
+        </div>
+        <div v-for="(item, index) in renderList" :key="index" class="input" :style="{ backgroundColor: props.colors?.inputBg }" v-html="item[0]" />
       </div>
 
       <!-- 右侧区域 -->
       <div class="section-output">
         <!-- 自定义右侧标题 -->
-        <div class="title">{{ labels?.right || 'Output' }}</div>
-        <div v-for="(item, index) in renderList" :key="index" class="output" :style="{ backgroundColor: props.colors?.outputBg }">{{ item[1] }}</div>
+        <div class="title">
+          {{ labels?.right || 'Output' }}
+        </div>
+        <div v-for="(item, index) in renderList" :key="index" class="output" :style="{ backgroundColor: props.colors?.outputBg }">
+          {{ item[1] }}
+        </div>
       </div>
     </div>
   </div>

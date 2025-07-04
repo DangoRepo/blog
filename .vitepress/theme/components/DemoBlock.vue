@@ -29,18 +29,26 @@ const renderList = computed<DemoItem[]>(() => {
     <div class="wrapper">
       <!-- 单个标题区域 -->
       <div class="section-code">
-        <div class="title">Markdown 语法</div>
+        <div class="title">
+          Markdown 语法
+        </div>
         <!-- 多个内容项共享该标题 -->
         <div v-for="(item, index) in renderList" :key="index" class="code" v-html="item.code" />
       </div>
 
       <div class="section-html">
-        <div class="title">HTML</div>
-        <div v-for="(item, index) in renderList" :key="index" class="html">{{ item.html }}</div>
+        <div class="title">
+          HTML
+        </div>
+        <div v-for="(item, index) in renderList" :key="index" class="html">
+          {{ item.html }}
+        </div>
       </div>
 
       <div class="section-preview">
-        <div class="title">预览效果</div>
+        <div class="title">
+          预览效果
+        </div>
         <div v-for="(item, index) in renderList" :key="index" class="preview" v-html="item.html" />
       </div>
     </div>
