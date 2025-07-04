@@ -14,7 +14,7 @@ interface DemoItem {
 const md = new MarkdownIt()
 
 const renderList = computed<DemoItem[]>(() => {
-  return props.list.map(code => {
+  return props.list.map((code) => {
     const sanitizedCode = code.replace(/<br\s*\/?>/gi, '\n') // 删除 <br>
     return {
       code: sanitizedCode.replace(/\n/g, '<br>'),
