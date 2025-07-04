@@ -11,13 +11,13 @@ aside: false
 
 比如，添加三个 `#` 表示创建一个三级标题（HTML 中记作 `<h3>`），例如：`### Heading level 3`。
 
-<DemoTable :list="[
-  `# Heading level 1`,
-  `## Heading level 2`,
-  `### Heading level 3`,
-  `#### Heading level 4`,
-  `##### Heading level 5`,
-  `###### Heading level 6`,
+<DemoBlock :list="[
+  '# Heading level 1',
+  '## Heading level 2',
+  '### Heading level 3',
+  '#### Heading level 4',
+  '##### Heading level 5',
+  '###### Heading level 6'
 ]" />
 
 ----
