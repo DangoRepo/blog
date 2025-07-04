@@ -3,6 +3,7 @@ import { useRoute } from 'vitepress'
 import DefaultTheme from 'vitepress/theme-without-fonts'
 import { nextTick, onMounted, watch } from 'vue'
 import Cursor from './components/Cursor/index.vue'
+import DemoBlock from './components/DemoBlock.vue'
 import DemoTable from './components/DemoTable.vue'
 import Icon from './components/Icon/index.vue'
 import KeyTag from './components/KeyTag/index.vue'
@@ -17,6 +18,7 @@ export default {
     ctx.app.component('Cursor', Cursor)
     ctx.app.component('KeyTag', KeyTag)
     ctx.app.component('DemoTable', DemoTable)
+    ctx.app.component('DemoBlock', DemoBlock)
   },
   setup() {
     const route = useRoute()
