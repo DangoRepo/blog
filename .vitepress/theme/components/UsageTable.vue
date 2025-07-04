@@ -8,6 +8,10 @@ const props = defineProps<{
     left?: string
     right?: string
   }
+  colors?:{
+    inputBg?: string
+    outputBg?: string
+  }
 }>()
 
 const md = new MarkdownIt()
@@ -19,17 +23,17 @@ const renderList = computed(() => props.list)
   <div class="usage-table-container">
     <div class="wrapper">
       <!-- 左侧区域 -->
-      <div class="section-correct">
+      <div class="section-input">
         <!-- 自定义左侧标题 -->
         <div class="title">{{ labels?.left || 'Input' }}</div>
-        <div v-for="(item, index) in renderList" :key="index" class="correct" v-html="item[0]" />
+        <div v-for="(item, index) in renderList" :key="index" class="input" v-html="item[0]" :style="{ backgroundColor: props.colors?.inputBg }"/>
       </div>
 
       <!-- 右侧区域 -->
-      <div class="section-wrong">
+      <div class="section-output">
         <!-- 自定义右侧标题 -->
         <div class="title">{{ labels?.right || 'Output' }}</div>
-        <div v-for="(item, index) in renderList" :key="index" class="wrong">{{ item[1] }}</div>
+        <div v-for="(item, index) in renderList" :key="index" class="output" :style="{ backgroundColor: props.colors?.outputBg }">{{ item[1] }}</div>
       </div>
     </div>
   </div>
@@ -58,18 +62,18 @@ const renderList = computed(() => props.list)
   height: auto;
 }
 
-.section-correct .correct:not(:last-child),
-.section-wrong .wrong:not(:last-child){
+.section-input .input:not(:last-child),
+.section-output .output:not(:last-child){
   /* margin-bottom: 0.5rem; */
   padding-bottom: 0.5rem;
   border-bottom: 3px solid var(--glb-customtable-c-border);
 }
 
-.section-correct .title {background-color: var(--glb-customtable-title-c-bg-lv1)}
-.section-wrong .title {background-color: var(--glb-customtable-title-c-bg-lv2)}
+.section-input .title {background-color: var(--glb-customtable-title-c-bg-lv1)}
+.section-output .title {background-color: var(--glb-customtable-title-c-bg-lv2)}
 
-.section-correct,
-.section-wrong{
+.section-input,
+.section-output{
   display: flex;
   flex-direction: column;
   flex: 1; /* 平均分配宽度 */
@@ -77,8 +81,8 @@ const renderList = computed(() => props.list)
   overflow: auto;
 }
 
-.correct,
-.wrong{
+.input,
+.output{
   flex: 1; /* 让内容撑开容器并保持高度一致 */
   display: flex;
   flex-direction: column;
@@ -87,7 +91,7 @@ const renderList = computed(() => props.list)
   overflow: auto; /* 内容溢出时显示滚动条 */
 }
 
-.wrapper .correct {
+.wrapper .input {
   flex: 2;
   background-color: var(--usagetable-c-bg-correct);
   color: var(--vp-c-text-1);
@@ -96,7 +100,7 @@ const renderList = computed(() => props.list)
   white-space: pre-wrap;
 }
 
-.wrapper .wrong {
+.wrapper .output {
   flex: 2;
   background-color: var(--usagetable-c-bg-wrong);
   color: var(--vp-c-text-1);
