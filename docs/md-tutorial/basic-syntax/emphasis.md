@@ -36,9 +36,19 @@ title: Markdown 强调语法
 
 3. Markdown 应用程序在如何处理单词或短语中间的下划线上并不一致。为了兼容性考虑，请统一使用两个星号 `*` 进行加粗。
 
-|:white_check_mark: 正确用法|    :x: 反面用法   |
-|:------------------------:|:-----------------:|
-|`ch**eck**mark`      |`che__eck__mark`|
+<UsageTable :list="[
+  [ 'ch**eck**mark', 'ch__eck__mark'],
+  [ 'Love is **bold**.', 'Love is __bold__.']
+  ]"
+  :labels="{
+    first: '建议使用',
+    second: '不建议使用',
+  }"
+  :colors="{
+    firstBg: 'var(--usagetable-c-bg-correct)',
+    secondBg: 'var(--usagetable-c-bg-wrong)',
+  }"
+/>
 
 4. 如果一定要使用下划线形式的强调语法对一个词内的部分文字进行强调，请务必在语法前后使用一个空格将其隔开，否则会被视为无效语法，例如：
 
