@@ -14,7 +14,7 @@ title: Markdown 强调语法
 
 <DemoBlock :list="[
   'I just love **bold text**.',
-  'I just love __bold text__.Love**is**bold',
+  'I just love __bold text__.',
   'Love**is**bold'
 ]" />
 
