@@ -1,6 +1,7 @@
 ---
 layout: doc
 title: 其他资源
+aside: false
 ---
 # 其他资源
 
