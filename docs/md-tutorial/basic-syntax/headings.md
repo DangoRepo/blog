@@ -25,7 +25,7 @@ aside: false
 ::: warning 注意
 需要注意的是，不同的 Markdown 应用程序的标题语法可能有所不同。为了兼容考虑，`#` 和标题之间需要用一个空格进行分隔。
 
-|:white_check_mark: 正确用法|    :x: 反面用法   |
-|:------------------------:|:-----------------:|
-|`# Here's a Heading`      |`#Here's a Heading`|
+::usage-table{:list='[["# Here\'s a Heading", "#Here\'s a heading"],["# Here\'s a Heading", "#Here\'s a heading"]]' :columns='[{"title": "正确用法"},{"title": "错误用法"}]'}
+::
+
 :::
