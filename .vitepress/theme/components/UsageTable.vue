@@ -107,6 +107,11 @@ function columnBgColor(colIndex: number): string {
   word-break: break-all;
   max-height: 200px; /* 固定显示区域高度 */
   overflow: auto; /* 内容溢出时显示滚动条 */
+  padding-bottom: 0.5rem;
+}
+
+.content:not(:last-child) {
+  border-bottom: 3px solid var(--glb-customtable-c-border);
 }
 
 .wrapper .content {
