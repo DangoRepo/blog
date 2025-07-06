@@ -1,78 +1,67 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
 
-const props = defineProps<{
+interface ColumnOptions {
+  title?: string
+  bgColor?: string
+  titleBgColor?: string
+  columnBgColor?: string
+}
+
+const props = withDefaults(defineProps<{
   list: string[][]
-  labels?: {
-    first?: string
-    second?: string
-    third?: string
-    fourth?: string
-    fifth?: string
-  }
-  colors?: {
-    firstBg?: string
-    secondBg?: string
-    thirdBg?: string
-    fourthBg?: string
-    fifthBg?: string
-  }
-}>()
+  columns?: ColumnOptions[]
+}>(), {
+  columns: () => ([]),
+})
 
-const renderList = computed(() => props.list)
+const maxColumn = computed(() => {
+  const rowColNums = props.list.map(v => v.length)
+  const maxCols = Math.max(...rowColNums)
+  return maxCols
+})
 
-const hasColumn = (index: number) => props.list.some(item => item[index] !== undefined && item[index] !== null)
+function titleBgColor(colIndex: number): string {
+  const defaultColors = [
+    'var(--glb-customtable-title-c-bg-lv0)',
+    'var(--glb-customtable-title-c-bg-lv1)',
+    'var(--glb-customtable-title-c-bg-lv2)',
+    'var(--glb-customtable-title-c-bg-lv3)',
+    'var(--glb-customtable-title-c-bg-lv4)',
+  ]
+  const colorIndex = (colIndex - 1) % (defaultColors.length)
+  return props.columns[colIndex - 1]?.titleBgColor ?? defaultColors[colorIndex]
+}
+function columnBgColor(colIndex: number): string {
+  const defaultColors = [
+    'var(--glb-customtable-content-bg-lv0)',
+    'var(--glb-customtable-content-bg-lv1)',
+    'var(--glb-customtable-content-bg-lv2)',
+    'var(--glb-customtable-content-bg-lv3)',
+    'var(--glb-customtable-content-bg-lv4)',
+  ]
+  const colorIndex = (colIndex - 1) % (defaultColors.length)
+  return props.columns[colIndex - 1]?.columnBgColor ?? defaultColors[colorIndex]
+}
 </script>
 
 <template>
   <div class="usage-table-container">
     <div class="wrapper">
-      <!-- 第一列 -->
-      <div v-if="hasColumn(0)" class="section-first">
-        <div class="title">
-          {{ labels?.first || 'First' }}
+      <div v-for="colIndex in maxColumn" :key="colIndex" class="section">
+        <div
+          class="title"
+          :style="{ backgroundColor: titleBgColor(colIndex) }"
+        >
+          {{ columns[colIndex - 1]?.title || '&nbsp;' }}
         </div>
-        <div v-for="(item, index) in renderList" :key="index" class="first" :style="{ backgroundColor: props.colors?.firstBg }" v-html="item[0]" />
-      </div>
-
-      <!-- 第二列 -->
-      <div v-if="hasColumn(1)" class="section-second">
-        <div class="title">
-          {{ labels?.second || 'Second' }}
-        </div>
-        <div v-for="(item, index) in renderList" :key="index" class="second" :style="{ backgroundColor: props.colors?.secondBg }">
-          {{ item[1] }}
-        </div>
-      </div>
-
-      <!-- 第三列 -->
-      <div v-if="hasColumn(2)" class="section-third">
-        <div class="title">
-          {{ labels?.third || 'Third' }}
-        </div>
-        <div v-for="(item, index) in renderList" :key="index" class="third" :style="{ backgroundColor: props.colors?.thirdBg }">
-          {{ item[2] }}
-        </div>
-      </div>
-
-      <!-- 第四列 -->
-      <div v-if="hasColumn(3)" class="section-fourth">
-        <div class="title">
-          {{ labels?.fourth || 'Fourth' }}
-        </div>
-        <div v-for="(item, index) in renderList" :key="index" class="fourth" :style="{ backgroundColor: props.colors?.fourthBg }">
-          {{ item[3] }}
-        </div>
-      </div>
-
-      <!-- 第五列 -->
-      <div v-if="hasColumn(4)" class="section-fifth">
-        <div class="title">
-          {{ labels?.fifth || 'Fifth' }}
-        </div>
-        <div v-for="(item, index) in renderList" :key="index" class="fifth" :style="{ backgroundColor: props.colors?.fifthBg }">
-          {{ item[4] }}
-        </div>
+        <div
+          v-for="(item, index) in list"
+          :key="index"
+          class="content"
+          :style="{ backgroundColor: columnBgColor(colIndex) }"
+          v-html="item[colIndex - 1]"
+        />
       </div>
     </div>
   </div>
@@ -101,32 +90,7 @@ const hasColumn = (index: number) => props.list.some(item => item[index] !== und
   height: auto;
 }
 
-.wrapper > div {
-  flex: 1;
-}
-
-.section-first .first:not(:last-child),
-.section-second .second:not(:last-child),
-.section-third .third:not(:last-child),
-.section-fourth .fourth:not(:last-child),
-.section-fifth .fifth:not(:last-child)
-{
-  /* margin-bottom: 0.5rem; */
-  padding-bottom: 0.5rem;
-  border-bottom: 3px solid var(--glb-customtable-c-border);
-}
-
-.section-first .title {background-color: var(--glb-customtable-title-c-bg-lv0)}
-.section-second .title {background-color: var(--glb-customtable-title-c-bg-lv1)}
-.section-third .title {background-color: var(--glb-customtable-title-c-bg-lv2)}
-.section-fourth .title {background-color: var(--glb-customtable-title-c-bg-lv3)}
-.section-fifth .title {background-color: var(--glb-customtable-title-c-bg-lv4)}
-
-.section-first,
-.section-second,
-.section-third,
-.section-fourth,
-.section-fifth
+.section
 {
   display: flex;
   flex-direction: column;
@@ -135,11 +99,7 @@ const hasColumn = (index: number) => props.list.some(item => item[index] !== und
   overflow: auto;
 }
 
-.first,
-.second,
-.third,
-.fourth,
-.fifth
+.content
 {
   flex: 1; /* 让内容撑开容器并保持高度一致 */
   display: flex;
@@ -149,45 +109,8 @@ const hasColumn = (index: number) => props.list.some(item => item[index] !== und
   overflow: auto; /* 内容溢出时显示滚动条 */
 }
 
-.wrapper .first {
+.wrapper .content {
   flex: 2;
-  background-color: var(--glb-customtable-content-bg-lv0);
-  color: var(--vp-c-text-1);
-  padding: 1rem;
-  font-family: sans-serif;
-  white-space: pre-wrap;
-}
-
-.wrapper .second {
-  flex: 2;
-  background-color: var(--glb-customtable-content-bg-lv1);
-  color: var(--vp-c-text-1);
-  padding: 1rem;
-  font-family: sans-serif;
-  white-space: pre-wrap;
-}
-
-.wrapper .third {
-  flex: 2;
-  background-color: var(--glb-customtable-content-bg-lv2);
-  color: var(--vp-c-text-1);
-  padding: 1rem;
-  font-family: sans-serif;
-  white-space: pre-wrap;
-}
-
-.wrapper .fourth {
-  flex: 2;
-  background-color: var(--glb-customtable-content-bg-lv3);
-  color: var(--vp-c-text-1);
-  padding: 1rem;
-  font-family: sans-serif;
-  white-space: pre-wrap;
-}
-
-.wrapper .fifth {
-  flex: 2;
-  background-color: var(--glb-customtable-content-bg-lv4);
   color: var(--vp-c-text-1);
   padding: 1rem;
   font-family: sans-serif;
