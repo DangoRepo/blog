@@ -8,4 +8,4 @@ yarn.lock
 .vitepress/cache
 .vitepress/dist
 
-.vscode/*.code-snippets
+.vscode/
