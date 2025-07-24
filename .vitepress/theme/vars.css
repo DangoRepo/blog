@@ -3,6 +3,9 @@
     --vp-home-hero-image-filter: blur(65px);
     --vp-fig-text: #aaa;
     --vp-fig-light-text: #808080;
+    --vp-sidebar-width: 220px;
+    --vp-sidebar-bg-color: #e8e9eb;
+    --vp-layout-max-width:1800px;
 
     --vp-font-family-base: 'HYWenHei';
     --vp-font-family-mono: 'FiraCode';
@@ -32,7 +35,13 @@
     --usagetable-c-bg-wrong: #fab7b770;
 }
 
+.VPDoc[data-v-94f13177] {
+    width: 95%;
+}
+
 .dark {
+    --vp-sidebar-bg-color: #161618;
+
     --vp-c-bg: #1b1b1f;
     --vp-c-bg-alt: #161618;
     --vp-c-bg-elv: #262626;
