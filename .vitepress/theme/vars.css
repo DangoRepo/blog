@@ -3,9 +3,9 @@
     --vp-home-hero-image-filter: blur(65px);
     --vp-fig-text: #aaa;
     --vp-fig-light-text: #808080;
-    --vp-sidebar-width: 220px;
+    --vp-sidebar-width: 230px;
     --vp-sidebar-bg-color: #e8e9eb;
-    --vp-layout-max-width:1800px;
+    --vp-layout-max-width: 1800px;
 
     --vp-font-family-base: 'HYWenHei';
     --vp-font-family-mono: 'FiraCode';
@@ -35,10 +35,6 @@
     --usagetable-c-bg-wrong: #fab7b770;
 }
 
-.VPDoc[data-v-94f13177] {
-    width: 95%;
-}
-
 .dark {
     --vp-sidebar-bg-color: #161618;
 
@@ -65,4 +61,26 @@
 
     --usagetable-c-bg-correct: #2d4a28f5;
     --usagetable-c-bg-wrong: #5a3030f8;
+}
+
+/* 正文区域（包含 aside 部分）属性 */
+.VPDoc[data-v-94f13177] {
+    width: 100%;
+}
+
+/* 正文区域（不包含 aside 部分）属性 */
+.VPDoc.has-aside .content-container[data-v-94f13177] {
+    max-width: 100%;
+}
+
+/* DemoBlock 组件容器属性 */
+.demo-block-container[data-v-7addc4b0] {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* UsageTable 组件容器属性 */
+.usage-table-container[data-v-dddfd75a] {
+    width: 85%;
+    margin: 0 auto;
 }
