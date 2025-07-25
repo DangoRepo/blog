@@ -11,6 +11,8 @@ aside: false
 
 比如，添加三个 `#` 表示创建一个三级标题（HTML 中记作 `<h3>`），例如：`### Heading level 3`。
 
+#### [**Example 1**](./headings.md#eg1) {#eg1}
+
 <DemoBlock :list="[
   '# Heading level 1',
   '## Heading level 2',
@@ -25,7 +27,7 @@ aside: false
 ::: warning 注意
 需要注意的是，不同的 Markdown 应用程序的标题语法可能有所不同。为了兼容考虑，`#` 和标题之间需要用一个空格进行分隔。
 
-::usage-table{:list='[["# Here\'s a Heading", "#Here\'s a heading"],["# Here\'s a Heading", "#Here\'s a heading"]]' :columns='[{"title": "正确用法"},{"title": "错误用法"}]'}
+::usage-table{:list='[["# Here\'s a Heading", "#Here\'s a heading"]]' :columns='[{"title": "正确用法"},{"title": "错误用法"}]'}
 ::
 
 :::
