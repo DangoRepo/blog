@@ -8,7 +8,7 @@ title: Markdown 段落与换行
 
 要创建段落，请使用空白行将一行或多行文本进行分隔。
 
-#### [**Example 2**](./para-and-line-breaks.md#eg2) {#eg2}
+[**Example 2**](./para-and-line-breaks.md#eg2) {#eg2}
 
 <DemoBlock :list="[
   'I\'m using Markdown to format my documents.\n\nIt\'s really convenient.',
@@ -19,7 +19,7 @@ title: Markdown 段落与换行
 :::warning 注意
 虽然你可能习惯了在传统文字编辑器上使用 Space 或 Tab 缩进来区分段落，但很不幸，上述两种方法在 Markdown 上均无效。请 **尤其注意** 不要在段落开头使用 Space 或 Tab 来表示段落，这会导致一些意料之外的排版问题。比如使用 Markdown 输入以下内容（`&nbsp;` 为空格）：
 
-#### [**Example 3**](./para-and-line-breaks.md#eg3) {#eg3}
+[**Example 3**](./para-and-line-breaks.md#eg3) {#eg3}
 
 <DemoBlock :list="[
   '    如果你使用空格在 Markdown 中来区分段落，则会产生这种问题。',
@@ -41,7 +41,7 @@ Markdown 有以下几种语法格式来实现换行：
 因为直接使用空格效果不足够明显，你可以选中对应的 Markdown 示例文本来查看空格。
 :::
 
-#### [**Example 4**](./para-and-line-breaks.md#eg4) {#eg4}
+[**Example 4**](./para-and-line-breaks.md#eg4) {#eg4}
 
 <DemoBlock :list="[
   'First line\n\nSecond line',
@@ -55,7 +55,7 @@ Markdown 有以下几种语法格式来实现换行：
 
 1. 换行语法不能在行间代码块中使用：
 
-#### [**Example 4**](./para-and-line-breaks.md#eg4) {#eg4}
+[**Example 4**](./para-and-line-breaks.md#eg4) {#eg4}
 
 <DemoBlock :list="[
   '`code<br>span`',
@@ -64,7 +64,7 @@ Markdown 有以下几种语法格式来实现换行：
 
 2. 换行语法不能在 HTML 标签中使用。不过准确来说这应该属于 HTML 语法的规则：
 
-#### [**Example 5**](./para-and-line-breaks.md#eg5) {#eg5}
+[**Example 5**](./para-and-line-breaks.md#eg5) {#eg5}
 
 |      Markdown 语法    |         预览效果       |
 |:--------------------- |:------------------------|
@@ -73,7 +73,7 @@ Markdown 有以下几种语法格式来实现换行：
 
 3. 无论使用哪种换行，换行语法后都应该至少接一个新的行，否则换行语法会被当作普通文本处理：
 
-#### [**Example 6**](./para-and-line-breaks.md#eg6) {#eg6}
+[**Example 6**](./para-and-line-breaks.md#eg6) {#eg6}
 
 <DemoBlock :list="[
   'foo\\',

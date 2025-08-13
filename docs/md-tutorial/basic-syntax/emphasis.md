@@ -12,7 +12,7 @@ title: Markdown 强调语法
 
 要加粗文本，请在单词或短语的前后各添加两个星号 `*` 或下划线 `_`。如需加粗一个单词或短语的中间部分用以表示强调的话，请在要加粗部分的两侧各添加两个星号 `*`。
 
-#### [**Example 7**](./para-and-line-breaks.md#eg7) {#eg7}
+[**Example 7**](./emphasis.md#eg7) {#eg7}
 
 <DemoBlock :list="[
   'I just love **bold text**.',
@@ -24,7 +24,7 @@ title: Markdown 强调语法
 
 要用斜体显示文本，请在单词或短语前后添加一个星号 `*` 或下划线 `_`。要斜体突出单词的中间部分，请在字母前后各添加一个星号，中间不要带空格。
 
-#### [**Example 8**](./para-and-line-breaks.md#eg8) {#eg8}
+[**Example 8**](./emphasis.md#eg8) {#eg8}
 
 <DemoBlock :list="[
   'Italicized text is the *cat\'s meow*.',
@@ -40,14 +40,14 @@ title: Markdown 强调语法
 
 3. Markdown 应用程序在如何处理单词或短语中间的下划线上并不一致。为了兼容性考虑，请统一使用两个星号 `*` 进行加粗。
 
-#### [**Example 9**](./para-and-line-breaks.md#eg9) {#eg9}
+[**Example 9**](./emphasis.md#eg9) {#eg9}
 
 ::usage-table{:list='[["ch**eck**mark", "ch__eck__mark"], ["Love is **bold**.", "Love is __bold."]]' :columns='[{"title": "建议使用"},{"title": "不建议使用"}]'}
 ::
 
 4. 如果一定要使用下划线形式的强调语法对一个词内的部分文字进行强调，请务必在语法前后使用一个空格将其隔开，否则会被视为无效语法，例如：
 
-#### [**Example 10**](./para-and-line-breaks.md#eg10) {#eg10}
+[**Example 10**](./emphasis.md#eg10) {#eg10}
 
 <DemoBlock :list="[
   'node_package_manager',
@@ -60,7 +60,7 @@ title: Markdown 强调语法
 
 6. 加粗与斜体可以连续使用，甚至可以套用，不过其具体的实现效果依旧按照 4 中的规则而定。下面举一个比较长的例子用以说明，为了方便理解，在这个例子里我不会混合使用两种表示方法。
 
-#### [**Example 11**](./para-and-line-breaks.md#eg11) {#eg11}
+[**Example 11**](./emphasis.md#eg11) {#eg11}
 
 <DemoBlock :list="[
   '**This is *Markdown***, *and the text in **THIS section** is bolded.*'
@@ -68,7 +68,7 @@ title: Markdown 强调语法
 
 7. 强调语法可以跨行使用，但此时除了不能在一行的末尾添加两个或两个以上的换行来进行换行之外，其余的换行语法均可以使用。例如：
 
-#### [**Example 12**](./para-and-line-breaks.md#eg12) {#eg12}
+[**Example 12**](./emphasis.md#eg12) {#eg12}
 
 <DemoBlock :list="[
   '**foo\nbar**',
@@ -79,4 +79,4 @@ title: Markdown 强调语法
 
 关于换行语法的使用，详见[换行语法][p:line-breaks]。
 
-[p:line-breaks]: ./para-and-line-breaks.md#line-breaks
+[p:line-breaks]: ./emphasis.md#line-breaks
