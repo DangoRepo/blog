@@ -31,6 +31,10 @@ const sidebar: DefaultTheme.Sidebar = {
           text: 'Markdown 强调语法',
           link: '/md-tutorial/basic-syntax/emphasis.md',
         },
+        {
+          text: 'Markdown 引用语法',
+          link: '/md-tutorial/basic-syntax/block-quotes.md',
+        },
       ],
     },
   ],
