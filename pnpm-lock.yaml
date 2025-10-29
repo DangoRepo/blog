@@ -36,6 +36,9 @@ importers:
       '@antfu/eslint-config':
         specifier: ^4.13.2
         version: 4.13.2(@typescript-eslint/utils@8.33.1(eslint@9.28.0(jiti@2.4.2))(typescript@5.8.3))(@vue/compiler-sfc@3.5.17)(eslint@9.28.0(jiti@2.4.2))(typescript@5.8.3)
+      '@types/markdown-it':
+        specifier: ^14.1.2
+        version: 14.1.2
       eslint:
         specifier: ^9.25.1
         version: 9.28.0(jiti@2.4.2)
