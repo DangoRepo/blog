@@ -16,8 +16,9 @@ const md = new MarkdownIt()
 const renderList = computed<DemoItem[]>(() => {
   return props.list.map((code) => {
     const sanitizedCode = code.replace(/<br\s*\/?>/gi, '\n') // 删除 <br>
+    const codeWithVisibleSpaces = sanitizedCode.replace(/ /g, '·')
     return {
-      code: sanitizedCode.replace(/\n/g, '<br>'),
+      code: codeWithVisibleSpaces.replace(/\n/g, '<br>'),
       html: md.render(sanitizedCode),
     }
   })
@@ -60,6 +61,7 @@ const renderList = computed<DemoItem[]>(() => {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding: 6px;
 }
 
 .title {
@@ -108,6 +110,16 @@ const renderList = computed<DemoItem[]>(() => {
   word-break: break-all;
   max-height: 200px; /* 固定显示区域高度 */
   overflow: auto; /* 内容溢出时显示滚动条 */
+}
+
+.code {
+  font-family: "FiraCode-Regular", monospace;
+  white-space: pre-wrap;
+}
+
+.code :deep(·) {
+  color: #ff6b6b;
+  opacity: 0.7;
 }
 
 .wrapper .code {
