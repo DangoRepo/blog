@@ -129,3 +129,7 @@ docs/                    VitePress srcDir
 - **MDC 冒号陷阱**：站点启用 `markdown-it-mdc`，正文里的 `:v`（Eyebrow (Villager) 页）会被解析成内联组件 `<v>` 并导致 Vue 编译失败，因此该处转义为 `\:v`；后续转换需留意「空格 + 冒号 + 字母」的组合。
 - 正文语言、拼写（如 `recomend`、`missplaced`）按原文保留，未作翻译或润色。
 - 原文用 h1/h2 组织章节而 VitePress 右侧目录只抽取 h2/h3，故各页 front matter 统一加 `outline: false`，页内导航由 sidebar 承担。
+
+## 提交信息规范
+
+commit message 只用一句话概括本次改动（`type: 摘要`），不写正文、不列要点，如 `docs: 移除 fresh-moves-wiki 页面 frontmatter 的来源字段`。
