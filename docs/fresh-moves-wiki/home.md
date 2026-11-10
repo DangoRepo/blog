@@ -1,7 +1,6 @@
 ---
 title: Home
-# 原文用 h1 划分章节，VitePress 的文章目录只收 h2/h3，右侧 aside 会空；本页目录由 sidebar 承担
-outline: false
+aside: true
 ---
 
 # Home
