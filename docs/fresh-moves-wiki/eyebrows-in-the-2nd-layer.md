@@ -1,9 +1,5 @@
 ---
 title: Eyebrows-in-the-2nd-Layer
-source: https://github.com/IthanMendoza/Fresh-Moves/wiki/Eyebrows-in-the-2nd-Layer
-project: IthanMendoza/Fresh-Moves
-wiki_last_modified: 2024-05-04
-fetched: 2026-11-11
 outline: false
 ---
 

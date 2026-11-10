@@ -1,9 +1,5 @@
 ---
 title: WIP-2x1-Fox-Eyes-(They-are-missplaced-in-v3.0.1)
-source: https://github.com/IthanMendoza/Fresh-Moves/wiki/WIP-2x1-Fox-Eyes-(They-are-missplaced-in-v3.0.1)
-project: IthanMendoza/Fresh-Moves
-wiki_last_modified: 2024-05-01
-fetched: 2026-11-11
 outline: false
 ---
 

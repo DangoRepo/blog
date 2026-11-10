@@ -1,9 +1,5 @@
 ---
 title: Fix-Moving-1st-Person-Hand
-source: https://github.com/IthanMendoza/Fresh-Moves/wiki/Fix-Moving-1st-Person-Hand
-project: IthanMendoza/Fresh-Moves
-wiki_last_modified: 2024-05-01
-fetched: 2026-11-11
 outline: false
 ---
 

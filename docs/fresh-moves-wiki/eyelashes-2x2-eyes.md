@@ -1,9 +1,5 @@
 ---
 title: Eyelashes-(2x2-Eyes)
-source: https://github.com/IthanMendoza/Fresh-Moves/wiki/Eyelashes-(2x2-Eyes)
-project: IthanMendoza/Fresh-Moves
-wiki_last_modified: 2024-05-04
-fetched: 2026-11-11
 outline: false
 ---
 

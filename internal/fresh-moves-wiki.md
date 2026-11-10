@@ -12,7 +12,7 @@
 | 仓库 | [IthanMendoza/Fresh-Moves](https://github.com/IthanMendoza/Fresh-Moves) |
 | Wiki 首页 | <https://github.com/IthanMendoza/Fresh-Moves/wiki/Home> |
 | 页面标题 | Home · IthanMendoza/Fresh-Moves Wiki |
-| 页面最后修改 | 2024-05-01 ~ 2024-05-04（逐页记录在 front matter） |
+| 页面最后修改 | 2024-05-01 ~ 2024-05-04（逐页日期见下方「页面清单」表） |
 | 抓取时间 | 2026-11-11 |
 | 采集范围 | **全部 16 个页面**（Home + 15 个子页面） |
 
@@ -45,7 +45,7 @@ docs/                    VitePress srcDir
 
 - **页面文件名：kebab-case**（全小写，单词间与原来的空格、括号统一转成连字符）。例如 `Eyebrow-(Villager).md` → `eyebrow-villager.md`、`WIP-2x1-Fox-Eyes-(They-are-missplaced-in-v3.0.1).md` → `wip-2x1-fox-eyes-they-are-missplaced-in-v3-0-1.md`。
 - 文件名与 `docs/public/assets/` 下对应章节目录名保持一致（如 `fix-black-eyes.md` ↔ `assets/fix-black-eyes/`），正文里的资源路径因此不会随改名而失效。
-- front matter 的 `title` / `source` 仍保留原始 Wiki 页面名，便于回溯 GitHub 原文。
+- front matter 只保留页面渲染相关字段（`title` / `outline` / `aside`）；来源、日期等信息统一记录在本文件，不在每页重复。
 
 ## 媒体文件约定
 
@@ -102,24 +102,24 @@ docs/                    VitePress srcDir
 
 顺序与 Wiki「Pages」列表一致（字母序，Home 置顶）：
 
-| # | 页面（Wiki 显示名） | 内容 |
-| --- | --- | --- |
-| 1 | Home | 概览、修复入口、加眼睛五步流程 |
-| 2 | 1x1 Simple Eyes | 无瞳孔、眨眼 |
-| 3 | 1x2 Simple Eyes | 无瞳孔、眨眼 |
-| 4 | 1x3 Simple Eyes | 无瞳孔、眨眼 |
-| 5 | 2x1 Derp Eyes | 2x1 的瞳孔位置变体 |
-| 6 | 2x1 Eyes | 带瞳孔 |
-| 7 | 2x2 Eyes | 带瞳孔 |
-| 8 | 2x3 Eyes | 带瞳孔 |
-| 9 | 3x1 Enderman Eyes | 末影人眼睛 |
-| 10 | Eyebrow (Villager) | 村民眉毛，需与眼睛组合 |
-| 11 | Eyebrows | 眉毛，需与眼睛组合 |
-| 12 | Eyebrows in the 2nd Layer | 画在第二层（帽子层）的眉毛 |
-| 13 | Eyelashes (2x2 Eyes) | 睫毛，配合 Bottom 2x2 Eyes |
-| 14 | Fix Black Eyes | EMF/ETF 更新 + 允许皮肤透明 |
-| 15 | Fix Moving 1st Person Hand | 关闭第一人称手部动画 |
-| 16 | WIP 2x1 Fox Eyes (They are missplaced in v3.0.1) | 未完成，v3.0.1 中眉毛位置有误 |
+| # | 页面（Wiki 显示名） | 最后修改 | 内容 |
+| --- | --- | --- | --- |
+| 1 | Home | 2024-05-01 | 概览、修复入口、加眼睛五步流程 |
+| 2 | 1x1 Simple Eyes | 2024-05-03 | 无瞳孔、眨眼 |
+| 3 | 1x2 Simple Eyes | 2024-05-03 | 无瞳孔、眨眼 |
+| 4 | 1x3 Simple Eyes | 2024-05-03 | 无瞳孔、眨眼 |
+| 5 | 2x1 Derp Eyes | 2024-05-03 | 2x1 的瞳孔位置变体 |
+| 6 | 2x1 Eyes | 2024-05-03 | 带瞳孔 |
+| 7 | 2x2 Eyes | 2024-05-03 | 带瞳孔 |
+| 8 | 2x3 Eyes | 2024-05-03 | 带瞳孔 |
+| 9 | 3x1 Enderman Eyes | 2024-05-03 | 末影人眼睛 |
+| 10 | Eyebrow (Villager) | 2024-05-03 | 村民眉毛，需与眼睛组合 |
+| 11 | Eyebrows | 2024-05-03 | 眉毛，需与眼睛组合 |
+| 12 | Eyebrows in the 2nd Layer | 2024-05-04 | 画在第二层（帽子层）的眉毛 |
+| 13 | Eyelashes (2x2 Eyes) | 2024-05-04 | 睫毛，配合 Bottom 2x2 Eyes |
+| 14 | Fix Black Eyes | 2024-05-01 | EMF/ETF 更新 + 允许皮肤透明 |
+| 15 | Fix Moving 1st Person Hand | 2024-05-01 | 关闭第一人称手部动画 |
+| 16 | WIP 2x1 Fox Eyes (They are missplaced in v3.0.1) | 2024-05-01 | 未完成，v3.0.1 中眉毛位置有误 |
 
 ## 转换说明
 

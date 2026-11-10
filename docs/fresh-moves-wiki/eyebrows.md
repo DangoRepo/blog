@@ -1,9 +1,5 @@
 ---
 title: Eyebrows
-source: https://github.com/IthanMendoza/Fresh-Moves/wiki/Eyebrows
-project: IthanMendoza/Fresh-Moves
-wiki_last_modified: 2024-05-03
-fetched: 2026-11-11
 outline: false
 ---
 

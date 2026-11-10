@@ -1,9 +1,5 @@
 ---
 title: Home
-source: https://github.com/IthanMendoza/Fresh-Moves/wiki/Home
-project: IthanMendoza/Fresh-Moves
-wiki_last_modified: 2024-05-01
-fetched: 2026-11-11
 # 原文用 h1 划分章节，VitePress 的文章目录只收 h2/h3，右侧 aside 会空；本页目录由 sidebar 承担
 outline: false
 ---
