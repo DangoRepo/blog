@@ -5,6 +5,8 @@ outline: false
 
 <!-- 由 GitHub Wiki 页面转换而来，正文结构与原文一致 -->
 
+# 2x2 Eyes
+
 The pixels right above the eyes are the eyelids. These also prevent eye duplication so you must put them.
 
 Bottom 2x2 eyes

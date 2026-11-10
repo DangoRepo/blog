@@ -5,6 +5,8 @@ outline: false
 
 <!-- 由 GitHub Wiki 页面转换而来，正文结构与原文一致 -->
 
+# Fix Moving 1st Person Hand
+
 The current version of Fresh Moves doesn't have this fix built in (May come in a future) for the time being you must follow these steps to get rid of those.
 
 1. **UPDATE Entity Model Features (EMF) and Entity Texture Features (ETF) to the LATEST UPDATE**

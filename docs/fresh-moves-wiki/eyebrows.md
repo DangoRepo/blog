@@ -5,6 +5,8 @@ outline: false
 
 <!-- 由 GitHub Wiki 页面转换而来，正文结构与原文一致 -->
 
+# Eyebrows
+
 These are eyebrows and must be combined with other eye types.
 
 Bottom Eyebrows (With Bottom 2x1 Eyes)

@@ -4,20 +4,22 @@ title: Home
 outline: false
 ---
 
-# **About Fresh Moves**
+# Home
+
+## About Fresh Moves
 
 This resource pack seeks to give the player entity enhanced animations based on the [Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/fresh-animations) resource pack made by FreshLX.
 
 This GitHub page has been made to teach how to add animated eyes to the 'Expressive' version of this resource pack and the '[Just Expressions](https://www.curseforge.com/minecraft/texture-packs/just-expressions)' resource pack. To sum up it's all about adding extra pixels to your current Minecraft skin to do that.
 
-# Fixes
+## Fixes
 
 If you have [Black Eyes](https://github.com/IthanMendoza/Fresh-Moves/wiki/Fix-Black-Eyes) or want to [Disable first person hand movement](https://www.curseforge.com/minecraft/texture-packs/fresh-animations) click in these guides here:
 
 - https://github.com/IthanMendoza/Fresh-Moves/wiki/Fix-Black-Eyes
 - https://github.com/IthanMendoza/Fresh-Moves/wiki/Fix-Moving-1st-Person-Hand
 
-# **How to animate the eyes**
+## How to animate the eyes
 
 1. Get the skin you want to use. You can download it from your Minecraft Account, Name MC, any skin that you want.
 2. Get any .png editor (must support image transparency) like Photoshop, GIMP, Windows 11 Paint, Blockbench (← We recomend using this one, it's free)

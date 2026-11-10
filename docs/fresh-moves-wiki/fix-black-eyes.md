@@ -5,6 +5,8 @@ outline: false
 
 <!-- 由 GitHub Wiki 页面转换而来，正文结构与原文一致 -->
 
+# Fix Black Eyes
+
 To fix the black eyes issue you must follow these steps:
 
 1. **UPDATE** Entity Model Features (EMF) and Entity Texture Features (ETF) to the **LATEST UPDATE**
