@@ -10,7 +10,7 @@ const nav: DefaultTheme.NavItem[] = [
       },
       {
         text: 'Fresh Moves Wiki',
-        link: '/fresh-moves-wiki/Home.md',
+        link: '/fresh-moves-wiki/home.md',
       },
     ],
   },

@@ -63,31 +63,75 @@ const sidebar: DefaultTheme.Sidebar = {
     },
   ],
 
+  // 与原始 Wiki 的页面列表保持一致：顺序、显示名均照搬，不做归类
   '/fresh-moves-wiki/': [
     {
       text: 'Fresh Moves Wiki',
       items: [
         {
-          text: 'Wiki 首页',
-          link: '/fresh-moves-wiki/Home.md',
-          collapsed: false,
-          items: [
-            {
-              text: 'About Fresh Moves',
-              link: '/fresh-moves-wiki/Home.md#about-fresh-moves',
-            },
-            {
-              text: 'Fixes',
-              link: '/fresh-moves-wiki/Home.md#fixes',
-            },
-            {
-              text: 'How to animate the eyes',
-              link: '/fresh-moves-wiki/Home.md#how-to-animate-the-eyes',
-            },
-          ],
+          text: 'Home',
+          link: '/fresh-moves-wiki/home.md',
         },
-        // 迁移新的 Wiki 章节后，在此按原页面的分组结构追加条目，例如：
-        // { text: 'Fix Black Eyes', link: '/fresh-moves-wiki/Fix-Black-Eyes.md' },
+        {
+          text: '1x1 Simple Eyes',
+          link: '/fresh-moves-wiki/1x1-simple-eyes.md',
+        },
+        {
+          text: '1x2 Simple Eyes',
+          link: '/fresh-moves-wiki/1x2-simple-eyes.md',
+        },
+        {
+          text: '1x3 Simple Eyes',
+          link: '/fresh-moves-wiki/1x3-simple-eyes.md',
+        },
+        {
+          text: '2x1 Derp Eyes',
+          link: '/fresh-moves-wiki/2x1-derp-eyes.md',
+        },
+        {
+          text: '2x1 Eyes',
+          link: '/fresh-moves-wiki/2x1-eyes.md',
+        },
+        {
+          text: '2x2 Eyes',
+          link: '/fresh-moves-wiki/2x2-eyes.md',
+        },
+        {
+          text: '2x3 Eyes',
+          link: '/fresh-moves-wiki/2x3-eyes.md',
+        },
+        {
+          text: '3x1 Enderman Eyes',
+          link: '/fresh-moves-wiki/3x1-enderman-eyes.md',
+        },
+        {
+          text: 'Eyebrow (Villager)',
+          link: '/fresh-moves-wiki/eyebrow-villager.md',
+        },
+        {
+          text: 'Eyebrows',
+          link: '/fresh-moves-wiki/eyebrows.md',
+        },
+        {
+          text: 'Eyebrows in the 2nd Layer',
+          link: '/fresh-moves-wiki/eyebrows-in-the-2nd-layer.md',
+        },
+        {
+          text: 'Eyelashes (2x2 Eyes)',
+          link: '/fresh-moves-wiki/eyelashes-2x2-eyes.md',
+        },
+        {
+          text: 'Fix Black Eyes',
+          link: '/fresh-moves-wiki/fix-black-eyes.md',
+        },
+        {
+          text: 'Fix Moving 1st Person Hand',
+          link: '/fresh-moves-wiki/fix-moving-1st-person-hand.md',
+        },
+        {
+          text: 'WIP 2x1 Fox Eyes (They are missplaced in v3.0.1)',
+          link: '/fresh-moves-wiki/wip-2x1-fox-eyes-they-are-missplaced-in-v3-0-1.md',
+        },
       ],
     },
   ],

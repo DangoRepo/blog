@@ -31,7 +31,7 @@ If you have [Black Eyes](https://github.com/IthanMendoza/Fresh-Moves/wiki/Fix-Bl
 
 The modification process of the third step for 2x1 eyes is shown here.
 
-<video controls muted src="/assets/how-to-animate-the-eyes/2024-04-13_21-48-41.mp4"></video>
+<video controls muted src="/assets/how-to-animate-the-eyes/modify-skin-2x1-eyes-process.mp4"></video>
 
-> 内嵌视频原文件名 `2024-04-13_21-48-41.mp4`，按所属章节存放于 `docs/public/assets/how-to-animate-the-eyes/`；
+> 内嵌视频现名 `modify-skin-2x1-eyes-process.mp4`（GitHub 附件原名 `2024-04-13_21-48-41.mp4`），存放于 `docs/public/assets/how-to-animate-the-eyes/`；
 > 原始上传地址：<https://github.com/IthanMendoza/Fresh-Moves/assets/127630637/3625d4d9-3d91-4993-9700-08cdb0476c5c>

@@ -1,0 +1,26 @@
+---
+title: Fix-Moving-1st-Person-Hand
+source: https://github.com/IthanMendoza/Fresh-Moves/wiki/Fix-Moving-1st-Person-Hand
+project: IthanMendoza/Fresh-Moves
+wiki_last_modified: 2024-05-01
+fetched: 2026-11-11
+outline: false
+---
+
+<!-- 由 GitHub Wiki 页面转换而来，正文结构与原文一致 -->
+
+The current version of Fresh Moves doesn't have this fix built in (May come in a future) for the time being you must follow these steps to get rid of those.
+
+1. **UPDATE Entity Model Features (EMF) and Entity Texture Features (ETF) to the LATEST UPDATE**
+2. Enter the ETF configuration menu in the resource pack menu in Minecraft (Click on the creeper face)
+3. Click through these options: Model → Player settings.
+4. Now set the "Prevent first person hand animations" to "ON" by clicking it.
+5. Click in the "Back" button until you quit the ETF configuration menu (The resource pack will reload, red Mojang Screen loading screen)
+6. If the hand still moves. Restart the game.
+
+The process is shown here. Be aware that at the start of the video **I have already updated both EMF and ETF to the LATEST update.** (First step) and the View Bobbing features is disabled in the game settings (to see the fix clearer).
+
+<video controls muted src="/assets/fix-moving-1st-person-hand/fix-1st-person-hand-process.mp4"></video>
+
+> 内嵌视频现名 `fix-1st-person-hand-process.mp4`（GitHub 附件原名 `2024-04-30.19-56-59.mp4`），存放于 `assets/fix-moving-1st-person-hand/`；
+> 原始上传地址：<https://github.com/IthanMendoza/Fresh-Moves/assets/127630637/aa6d00be-9e16-4c4f-bd90-7280bb3b4beb>
