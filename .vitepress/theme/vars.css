@@ -3,9 +3,9 @@
     --vp-home-hero-image-filter: blur(65px);
     --vp-fig-text: #aaa;
     --vp-fig-light-text: #808080;
-    --vp-sidebar-width: 230px;
+    --vp-sidebar-width: clamp(240px, 17vw, 320px);
     --vp-sidebar-bg-color: #e8e9eb;
-    --vp-layout-max-width: 1800px;
+    --vp-layout-max-width: max(1440px, min(1800px, 100vw));
 
     --vp-font-family-base: 'HYWenHei';
     --vp-font-family-mono: 'FiraCode';
