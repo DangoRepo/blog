@@ -2,7 +2,8 @@
 
 从 GitHub Wiki 抓取的项目文档，现作为「**教程 → Fresh Moves Wiki**」的一个跳转入口挂在站点导航下，页面内自带 sidebar 目录，便于后续逐章迁移。
 
-> 导航只保留一个入口；章节之间的嵌套关系由 `sidebar.ts` 中 `/fresh-moves-wiki/` 分区维护，本页（README）不进入 sidebar。
+> 本文件放在仓库的 `internal/` 下，位于 VitePress 的 `srcDir`（`docs/`）之外，因此**不参与站点构建**：不生成页面、不进导航与 sidebar、不入本地搜索索引，仅在仓库内查阅。
+> 导航只保留一个入口；章节之间的嵌套关系由 `sidebar.ts` 中 `/fresh-moves-wiki/` 分区维护，正文页面本身不承担导航职责。
 
 ## 来源
 
@@ -20,12 +21,14 @@
 ## 目录结构
 
 ```
-docs/
+internal/
+└─ fresh-moves-wiki.md   本文件：仓库内文档，不参与站点构建
+
+docs/                    VitePress srcDir
 ├─ fresh-moves-wiki/
-│  ├─ README.md   本文件：来源说明、媒体约定与索引
-│  └─ Home.md     Wiki「Home」章节正文（导航入口）
-└─ public/
-   └─ assets/     媒体文件独立目录，按原始章节分类
+│  └─ Home.md            Wiki「Home」章节正文（导航入口）
+└─ public/               静态资源，构建时原样复制
+   └─ assets/            媒体文件独立目录，按原始章节分类
       └─ how-to-animate-the-eyes/
          └─ 2024-04-13_21-48-41.mp4
 ```

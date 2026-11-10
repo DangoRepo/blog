@@ -8,6 +8,10 @@ const nav: DefaultTheme.NavItem[] = [
         text: 'Markdown 教程',
         link: '/md-tutorial/md-intro.md',
       },
+      {
+        text: 'Fresh Moves Wiki',
+        link: '/fresh-moves-wiki/Home.md',
+      },
     ],
   },
   {

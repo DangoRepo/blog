@@ -62,6 +62,35 @@ const sidebar: DefaultTheme.Sidebar = {
       link: '/i18n-standard/reference.md',
     },
   ],
+
+  '/fresh-moves-wiki/': [
+    {
+      text: 'Fresh Moves Wiki',
+      items: [
+        {
+          text: 'Wiki 首页',
+          link: '/fresh-moves-wiki/Home.md',
+          collapsed: false,
+          items: [
+            {
+              text: 'About Fresh Moves',
+              link: '/fresh-moves-wiki/Home.md#about-fresh-moves',
+            },
+            {
+              text: 'Fixes',
+              link: '/fresh-moves-wiki/Home.md#fixes',
+            },
+            {
+              text: 'How to animate the eyes',
+              link: '/fresh-moves-wiki/Home.md#how-to-animate-the-eyes',
+            },
+          ],
+        },
+        // 迁移新的 Wiki 章节后，在此按原页面的分组结构追加条目，例如：
+        // { text: 'Fix Black Eyes', link: '/fresh-moves-wiki/Fix-Black-Eyes.md' },
+      ],
+    },
+  ],
 }
 
 export default sidebar
