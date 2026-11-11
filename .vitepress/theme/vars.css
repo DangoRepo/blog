@@ -64,9 +64,12 @@
     --usagetable-c-bg-wrong: #5a3030f8;
 }
 
-/* 正文区域（不包含 aside 部分）属性 */
-.VPDoc.has-aside .content-container[data-v-94f13177] {
-    max-width: 100%;
+/* 正文区域（不包含 aside 部分）属性
+   VitePress 自带规则带编译期生成的 [data-v-xxx] 作用域，而 scopeId 在 dev（哈希路径）
+   与 build（哈希路径 + 源码）下并不相同，写死 id 会让规则在构建后静默失效，
+   因此这里不加 scope 限定，改用 !important 覆盖默认的 max-width: 688px */
+.VPDoc.has-aside .content-container {
+    max-width: 100% !important;
 }
 
 /* DemoBlock 组件容器属性 */
