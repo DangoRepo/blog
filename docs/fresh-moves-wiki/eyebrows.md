@@ -7,6 +7,8 @@ outline: false
 
 # Eyebrows
 
+---
+
 These are eyebrows and must be combined with other eye types.
 
 Bottom Eyebrows (With Bottom 2x1 Eyes)

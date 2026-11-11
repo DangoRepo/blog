@@ -33,7 +33,7 @@ docs/                    VitePress srcDir
 │  ├─ eyebrow-villager.md / eyebrows.md / eyebrows-in-the-2nd-layer.md / eyelashes-2x2-eyes.md
 │  └─ wip-2x1-fox-eyes-they-are-missplaced-in-v3-0-1.md
 └─ public/
-   └─ assets/            媒体文件独立目录，按章节分类（17 个子目录 / 37 个文件 / 约 11 MB）
+   └─ assets/            媒体文件独立目录，按章节分类（16 个子目录 / 37 个文件 / 约 11 MB）
       ├─ how-to-animate-the-eyes/            Home 页内小节
       ├─ fix-black-eyes/  fix-moving-1st-person-hand/
       ├─ 1x1-simple-eyes/ … 3x1-enderman-eyes/

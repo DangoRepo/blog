@@ -7,6 +7,8 @@ outline: false
 
 # Eyebrows in the 2nd Layer
 
+---
+
 These are eyebrows that will show over the 2nd layer of the head model (Hat part). These are meant to be used if your skin mostly hides your eyebrows in the first layer.
 
 Bottom 2nd Layer Eyebrows (With bottom 2x1 Eyes)

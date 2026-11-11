@@ -7,6 +7,8 @@ outline: false
 
 # Eyebrow (Villager)
 
+---
+
 Now you can be one of them \:v (Nose not included... yet)
 
 You have to combine this eyebrow with other eyes, for example:

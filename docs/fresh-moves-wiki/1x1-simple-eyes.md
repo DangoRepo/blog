@@ -7,6 +7,8 @@ outline: false
 
 # 1x1 Simple Eyes
 
+---
+
 Just like piglins in Fresh Animations these eyes don't have a pupil (Darker color) that will move. They'll just get a smooth blinking animation (Eyelids are the brighter color).
 
 Bottom Exterior 1x1 Eyelids

@@ -7,6 +7,8 @@ outline: false
 
 # 2x3 Eyes
 
+---
+
 The pixels right above the eyes are the eyelids. These also prevent eye duplication so you must put them.
 
 2x3 Eyes

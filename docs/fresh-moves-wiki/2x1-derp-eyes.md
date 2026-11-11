@@ -7,6 +7,8 @@ outline: false
 
 # 2x1 Derp Eyes
 
+---
+
 Similar to the normal 2x1 Eyes but the pupils must be added in these positions.
 
 The pixels right above the eye whites are the eyelids. These also prevent eye duplication so you must put them.
