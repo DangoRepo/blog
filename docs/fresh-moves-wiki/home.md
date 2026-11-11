@@ -7,9 +7,9 @@ aside: true
 
 ## About Fresh Moves
 
-This resource pack seeks to give the player entity enhanced animations based on the [Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/fresh-animations) resource pack made by FreshLX.
+This resource pack seeks to give the player entity enhanced animations based on the [Fresh Animations][fresh-animations] resource pack made by FreshLX.
 
-This GitHub page has been made to teach how to add animated eyes to the 'Expressive' version of this resource pack and the '[Just Expressions](https://www.curseforge.com/minecraft/texture-packs/just-expressions)' resource pack. To sum up it's all about adding extra pixels to your current Minecraft skin to do that.
+This GitHub page has been made to teach how to add animated eyes to the 'Expressive' version of this resource pack and the '[Just Expressions][just-expressions]' resource pack. To sum up it's all about adding extra pixels to your current Minecraft skin to do that.
 
 ## Fixes
 
@@ -30,3 +30,4 @@ The modification process of the third step for 2x1 eyes is shown here.
 [fix-black-eyes]: /fresh-moves-wiki/fix-black-eyes.md
 [fix-moving-1st-person-hand]: /fresh-moves-wiki/fix-moving-1st-person-hand.md
 [fresh-animations]: https://www.curseforge.com/minecraft/texture-packs/fresh-animations
+[just-expressions]: https://www.curseforge.com/minecraft/texture-packs/just-expressions

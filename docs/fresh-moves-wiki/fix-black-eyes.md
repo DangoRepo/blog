@@ -20,6 +20,3 @@ To fix the black eyes issue you must follow these steps:
 This whole process is shown here. Be aware that by the start of the video **I already have both EMF and ETF updated to LATEST version** and I don't longer have the AlphaSkins mod or the CustomSkinLoader mod (first and second step)
 
 <video controls muted src="/assets/fix-black-eyes/fix-black-eyes-process.mp4"></video>
-
-> 内嵌视频现名 `fix-black-eyes-process.mp4`（GitHub 附件原名 `2024-04-30.19-50-10.mp4`），存放于 `assets/fix-black-eyes/`；
-> 原始上传地址：<https://github.com/IthanMendoza/Fresh-Moves/assets/127630637/da7b0d30-3b6e-4685-a171-df984af19ab5>
