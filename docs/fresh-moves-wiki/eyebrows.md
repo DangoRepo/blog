@@ -11,14 +11,15 @@ outline: false
 
 These are eyebrows and must be combined with other eye types.
 
-Bottom Eyebrows (With Bottom 2x1 Eyes)
-![](/assets/eyebrows/bottom-eyebrows-with-bottom-2x1-eyes.png)
+![Bottom Eyebrows (With Bottom 2x1 Eyes)][bottom-eyebrows-with-bottom-2x1-eyes]
 
-Lower Mid Eyebrows (With Bottom 2x2 Eyes)
-![](/assets/eyebrows/lower-mid-eyebrows-with-bottom-2x2-eyes.png)
+![Lower Mid Eyebrows (With Bottom 2x2 Eyes)][lower-mid-eyebrows-with-bottom-2x2-eyes]
 
-Upper Mid Eyebrows (With Upper Mid 2x3 Eyes)
-![](/assets/eyebrows/upper-mid-eyebrows-with-upper-mid-2x3-eyes.png)
+![Upper Mid Eyebrows (With Upper Mid 2x3 Eyes)][upper-mid-eyebrows-with-upper-mid-2x3-eyes]
 
-Top Eyebrows (With Top 2x1 Derp Eyes)
-![](/assets/eyebrows/top-eyebrows-with-top-2x1-derp-eyes.png)
+![Top Eyebrows (With Top 2x1 Derp Eyes)][top-eyebrows-with-top-2x1-derp-eyes]
+
+[bottom-eyebrows-with-bottom-2x1-eyes]: /assets/eyebrows/bottom-eyebrows-with-bottom-2x1-eyes.png
+[lower-mid-eyebrows-with-bottom-2x2-eyes]: /assets/eyebrows/lower-mid-eyebrows-with-bottom-2x2-eyes.png
+[upper-mid-eyebrows-with-upper-mid-2x3-eyes]: /assets/eyebrows/upper-mid-eyebrows-with-upper-mid-2x3-eyes.png
+[top-eyebrows-with-top-2x1-derp-eyes]: /assets/eyebrows/top-eyebrows-with-top-2x1-derp-eyes.png
