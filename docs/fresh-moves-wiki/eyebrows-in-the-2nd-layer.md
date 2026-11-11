@@ -3,8 +3,6 @@ title: Eyebrows-in-the-2nd-Layer
 outline: false
 ---
 
-<!-- 由 GitHub Wiki 页面转换而来，正文结构与原文一致 -->
-
 # Eyebrows in the 2nd Layer
 
 ---

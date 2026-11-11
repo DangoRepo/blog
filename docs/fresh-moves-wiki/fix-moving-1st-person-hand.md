@@ -3,8 +3,6 @@ title: Fix-Moving-1st-Person-Hand
 outline: false
 ---
 
-<!-- 由 GitHub Wiki 页面转换而来，正文结构与原文一致 -->
-
 # Fix Moving 1st Person Hand
 
 ---
@@ -22,5 +20,3 @@ The process is shown here. Be aware that at the start of the video **I have alre
 
 <video controls muted src="/assets/fix-moving-1st-person-hand/fix-1st-person-hand-process.mp4"></video>
 
-> 内嵌视频现名 `fix-1st-person-hand-process.mp4`（GitHub 附件原名 `2024-04-30.19-56-59.mp4`），存放于 `assets/fix-moving-1st-person-hand/`；
-> 原始上传地址：<https://github.com/IthanMendoza/Fresh-Moves/assets/127630637/aa6d00be-9e16-4c4f-bd90-7280bb3b4beb>

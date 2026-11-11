@@ -13,10 +13,7 @@ This GitHub page has been made to teach how to add animated eyes to the 'Express
 
 ## Fixes
 
-If you have [Black Eyes](https://github.com/IthanMendoza/Fresh-Moves/wiki/Fix-Black-Eyes) or want to [Disable first person hand movement](https://www.curseforge.com/minecraft/texture-packs/fresh-animations) click in these guides here:
-
-- https://github.com/IthanMendoza/Fresh-Moves/wiki/Fix-Black-Eyes
-- https://github.com/IthanMendoza/Fresh-Moves/wiki/Fix-Moving-1st-Person-Hand
+Get guides in this line if you have [Black Eyes][fix-black-eyes] or you have [Fresh Animations][fresh-animations], but want to [disable first person hand movement][fix-moving-1st-person-hand].
 
 ## How to animate the eyes
 
@@ -30,5 +27,6 @@ The modification process of the third step for 2x1 eyes is shown here.
 
 <video controls muted src="/assets/how-to-animate-the-eyes/modify-skin-2x1-eyes-process.mp4"></video>
 
-> 内嵌视频现名 `modify-skin-2x1-eyes-process.mp4`（GitHub 附件原名 `2024-04-13_21-48-41.mp4`），存放于 `docs/public/assets/how-to-animate-the-eyes/`；
-> 原始上传地址：<https://github.com/IthanMendoza/Fresh-Moves/assets/127630637/3625d4d9-3d91-4993-9700-08cdb0476c5c>
+[fix-black-eyes]: /fresh-moves-wiki/fix-black-eyes.md
+[fix-moving-1st-person-hand]: /fresh-moves-wiki/fix-moving-1st-person-hand.md
+[fresh-animations]: https://www.curseforge.com/minecraft/texture-packs/fresh-animations
